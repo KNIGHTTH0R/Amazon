@@ -7,14 +7,15 @@ class DB{
 	private function __clone() {}
 
 	public static function getConnection(){
-	
-		$hostname = 'rp2.studenti.math.hr';
-		$dbUsername = 'student';
-		$dbPassword = 'pass.mysql';
+		
+		//fill these variables with appropriate values
+		$hostname = '';
+		$dbUsername = '';
+		$dbPassword = '';
 		
 		if(DB::$db === null){
 			try{
-				DB::$db = new PDO("mysql: host=$hostname; dbname=custic; charset=utf8", $dbUsername, $dbPassword);
+				DB::$db = new PDO("mysql: host=$hostname; dbname=amazon; charset=utf8", $dbUsername, $dbPassword);
 				DB::$db-> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			}
 			catch(PDOException $e){
