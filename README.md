@@ -6,4 +6,6 @@ To run the application you should adjust database settings in **model/db.class.p
 
 Application is written in PHP following MVC design pattern. 
 
+App is in Croatian.
+
 You can (maybe) find app [here](http://rp2.studenti.math.hr/~pcustic/dz2/amazon/index.php)
